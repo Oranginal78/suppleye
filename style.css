@@ -517,6 +517,10 @@ body {
         height: auto;
         min-height: 100vh;
     }
+
+    .hero-content h1 {
+        line-height: 1.2;
+    }
     
     .about-section {
         padding: 60px 20px;
