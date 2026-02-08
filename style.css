@@ -344,6 +344,92 @@ body {
     line-height: 1;
 }
 
+/* --- Section 4: Contact / Footer --- */
+.contact-section {
+    background-color: #151515; /* Black background */
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+}
+
+.contact-card {
+    background-color: #FFFFFF;
+    width: 100%;
+    max-width: 1400px;
+    border-radius: 60px;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 500px;
+    position: relative;
+    color: var(--dark-green);
+}
+
+.contact-content {
+    flex: 1;
+}
+
+.contact-title {
+    font-size: 6rem;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 20px;
+    letter-spacing: -0.03em;
+    color: var(--dark-green);
+}
+
+.contact-subtitle {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 60px;
+    color: var(--text-dark);
+}
+
+.contact-info {
+    margin-top: auto;
+}
+
+.contact-info p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.contact-email {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--dark-green);
+    text-decoration: none;
+}
+
+.footer-bottom {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 0.9rem;
+    color: #666;
+    border-top: 1px solid #eee;
+    padding-top: 30px;
+}
+
+.legal-links a {
+    color: #666;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.2s;
+}
+
+.legal-links a:hover {
+    color: var(--dark-green);
+}
+
 /* --- Responsive Breakpoints --- */
 
 /* Tablet / Small Laptop */
@@ -393,6 +479,18 @@ body {
         font-size: 4rem;
         text-align: center;
     }
+
+    /* Contact Section Tablet */
+    .contact-card {
+        padding: 50px;
+        border-radius: 40px;
+    }
+    .contact-title {
+        font-size: 4rem;
+    }
+    .contact-subtitle {
+        font-size: 1.5rem;
+    }
 }
 
 /* Mobile / Tablet Portrait */
@@ -426,6 +524,27 @@ body {
     
     .about-footer-logo {
         font-size: 3rem;
+    }
+
+    /* Contact Section Mobile */
+    .contact-section {
+        padding: 20px;
+    }
+    .contact-card {
+        padding: 30px;
+        border-radius: 30px;
+        min-height: 400px;
+    }
+    .contact-title {
+        font-size: 3rem;
+    }
+    .contact-subtitle {
+        font-size: 1.2rem;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
     }
 }
 
