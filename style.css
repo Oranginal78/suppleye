@@ -1,0 +1,334 @@
+:root {
+    /* --- Colors & Fonts --- */
+    --primary-green: #006837;
+    --dark-green: #00331D; /* For the button */
+    --vision-yellow: #F0FF3D;
+    --text-dark: #151515;
+    --bg-light: #F4F6F6; /* Light background for section 2 */
+    --badge-bg: #151515; /* Dark background for badges */
+    --font-family: 'Manrope', sans-serif;
+
+    /* --- Desktop Settings (Default) --- */
+    /* Layout */
+    --hero-padding: 20px 30px;
+    --section-padding: 80px 100px;
+    
+    /* Logo */
+    --logo-height: 70px;
+    --logo-margin-left: 0;
+
+    /* Tagline */
+    --tagline-size: 0.9rem;
+    --tagline-margin-top: 0;
+
+    /* Hero Title */
+    --h1-size: clamp(2rem, 5.5vw, 4rem);
+    --h1-margin-top: 40px;
+    --h1-margin-bottom: 90px;
+
+    /* Vision Badge */
+    --badge-padding: 12px 65px;
+    --badge-font-size: 0.95rem;
+
+    /* Section 2 Typography */
+    --h2-size: 3.5rem;
+    --subtitle-size: 1.1rem;
+}
+
+/* --- Base Reset & Global --- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-dark);
+    line-height: 1.4;
+    overflow-x: hidden;
+}
+
+/* --- Hero Section --- */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 700px;
+    background-image: url('images/hf_20260125_214232_444b38bc-3719-4709-bfb9-3dd43d8871de (1).webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding: var(--hero-padding);
+}
+
+.hero-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo img {
+    height: var(--logo-height);
+    width: auto;
+    margin-left: var(--logo-margin-left);
+}
+
+.header-tagline {
+    text-align: right;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    font-size: var(--tagline-size);
+    margin-top: var(--tagline-margin-top);
+}
+
+.hero-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-weight: 400;
+    max-width: 1400px;
+    letter-spacing: -0.05em;
+    line-height: 0.95;
+    font-size: var(--h1-size);
+    margin-top: var(--h1-margin-top);
+    margin-bottom: var(--h1-margin-bottom);
+}
+
+.vision-badge {
+    background-color: var(--vision-yellow);
+    border-radius: 50px;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    padding: var(--badge-padding);
+    font-size: var(--badge-font-size);
+}
+
+/* --- Section 2: Welcome (Bento Grid) --- */
+.welcome-section {
+    background-color: var(--bg-light);
+    padding: 80px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome-header {
+    text-align: center;
+    max-width: 900px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome-header h2 {
+    font-size: var(--h2-size);
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    letter-spacing: -0.02em;
+}
+
+.welcome-subtitle {
+    font-size: var(--subtitle-size);
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: #444;
+    font-weight: 400;
+}
+
+.btn-discover {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--dark-green);
+    color: white;
+    text-decoration: none;
+    padding: 12px 35px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    gap: 10px;
+    transition: transform 0.2s;
+}
+
+.btn-discover:hover {
+    transform: scale(1.05);
+}
+
+/* --- Bento Grid Layout --- */
+.bento-grid {
+    display: grid;
+    /* 4 columns layout: 1fr each */
+    grid-template-columns: repeat(4, 1fr);
+    /* 2 Rows Fixed Height */
+    grid-template-rows: 350px 250px;
+    gap: 20px;
+    width: 100%;
+    max-width: 1400px;
+    margin-top: 40px;
+    grid-auto-flow: dense;
+}
+
+/* Item Styling */
+.bento-item {
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.bento-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 30px;
+}
+
+/* --- Item Positioning (Explicit) --- */
+
+/* Row 1 */
+/* Col 1: Sofa */
+.item-sofa {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+/* Col 2: Rower */
+.item-rower {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+/* Col 3: Ring */
+.item-ring {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+/* Col 4: Cream */
+.item-cream {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+}
+
+/* Row 2 */
+/* Col 1: Badge Left */
+.item-badge-1 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    height: 100%;
+}
+
+/* Col 2 & 3: Tech (Spans 2 cols) */
+.item-tech {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    height: 100%;
+}
+
+/* Col 4: Badge Right */
+.item-badge-2 {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    height: 100%;
+}
+
+/* Badge Style */
+.badge-dark {
+    background-color: #151515;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    text-align: left;
+    border-radius: 30px;
+}
+
+.badge-dark span {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+/* --- Responsive Breakpoints --- */
+
+/* Tablet / Small Laptop */
+@media (max-width: 1024px) {
+    :root {
+        --hero-padding: 20px 25px;
+        --logo-height: 70px;
+        --h1-size: 3.5rem;
+        
+        --section-padding: 60px 40px;
+    }
+
+    .bento-grid {
+        display: flex;
+        flex-direction: column;
+        grid-template-rows: auto; /* Reset rows */
+    }
+    
+    /* Reset all to standard height on mobile */
+    .bento-item, .item-tech, .badge-dark, .item-sofa, .item-rower, .item-ring, .item-cream, .item-badge-1, .item-badge-2 {
+        width: 100%;
+        height: 300px;
+        grid-column: auto;
+        grid-row: auto;
+    }
+    
+    .badge-dark {
+        height: auto;
+        min-height: 100px;
+    }
+}
+
+/* Mobile / Tablet Portrait */
+@media (max-width: 768px) {
+    :root {
+        --hero-padding: 15px 20px;
+        --logo-height: 50px;
+        
+        --tagline-size: 0.7rem;
+        --tagline-margin-top: 15px;
+        
+        --h1-size: 2.2rem;
+        --h1-margin-top: 20px;
+        --h1-margin-bottom: 50px;
+        
+        --badge-padding: 10px 45px;
+        --badge-font-size: 0.85rem;
+        
+        --section-padding: 40px 20px;
+        --h2-size: 2.2rem;
+    }
+    
+    .hero {
+        height: auto;
+        min-height: 100vh;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    :root {
+        --hero-padding: 10px 15px;
+        --logo-height: 40px;
+        --logo-margin-left: -2px;
+        
+        --tagline-size: 0.6rem;
+        --tagline-margin-top: 10px;
+        
+        --h1-size: 1.8rem;
+    }
+}
