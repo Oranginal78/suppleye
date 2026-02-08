@@ -1,38 +1,98 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mentions Légales - Suppl'Eye</title>
+    <title>Legal Notice - Suppl'Eye</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body { background-color: #F4F6F6; color: #151515; padding: 40px 20px; }
-        .legal-container { max-width: 800px; margin: 0 auto; background: white; padding: 40px; border-radius: 20px; }
-        h1 { margin-bottom: 30px; color: #00331D; }
-        h2 { margin-top: 20px; margin-bottom: 10px; font-size: 1.2rem; color: #006837; }
-        p { margin-bottom: 15px; line-height: 1.6; }
-        .back-link { display: inline-block; margin-bottom: 20px; color: #151515; text-decoration: none; font-weight: 600; }
+        body { 
+            background-color: #151515; 
+            color: #151515; 
+            padding: 40px; 
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .legal-card { 
+            background-color: #FFFFFF;
+            width: 100%;
+            max-width: 1000px;
+            border-radius: 60px;
+            padding: 80px;
+            margin: 0 auto;
+        }
+        h1 { 
+            font-size: 3rem; 
+            font-weight: 500; 
+            color: #00331D; 
+            margin-bottom: 40px; 
+            letter-spacing: -0.02em;
+        }
+        h2 { 
+            margin-top: 30px; 
+            margin-bottom: 15px; 
+            font-size: 1.5rem; 
+            color: #006837; 
+            font-weight: 600;
+        }
+        p { 
+            margin-bottom: 15px; 
+            line-height: 1.6; 
+            color: #151515;
+            font-size: 1.05rem;
+        }
+        .back-link { 
+            display: inline-flex; 
+            align-items: center;
+            margin-bottom: 40px; 
+            color: #00331D; 
+            text-decoration: none; 
+            font-weight: 600; 
+            gap: 8px;
+            transition: transform 0.2s;
+        }
+        .back-link:hover { transform: translateX(-5px); }
+        
+        @media (max-width: 768px) {
+            body { padding: 20px; }
+            .legal-card { padding: 30px; border-radius: 30px; }
+            h1 { font-size: 2rem; }
+        }
     </style>
 </head>
 <body>
-    <div class="legal-container">
-        <a href="index.html" class="back-link">← Retour à l'accueil</a>
-        <h1>Mentions Légales</h1>
+    <div class="legal-card">
+        <a href="index.html" class="back-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            Back to Home
+        </a>
+        <h1>Legal Notice</h1>
 
-        <h2>1. Éditeur du site</h2>
-        <p>Le site Suppl'Eye est édité par le studio Suppl'Eye.<br>
-        Email : contact@suppleye.co</p>
+        <h2>1. Publisher</h2>
+        <p>Suppl'Eye is a service provided by the company <strong>VELAR</strong>.</p>
+        <p>
+            <strong>Legal Form:</strong> SAS (Société par actions simplifiée)<br>
+            <strong>Capital:</strong> [Capital Amount if known, otherwise omitted]<br>
+            <strong>Headquarters:</strong> 66 AVENUE DES CHAMPS ELYSEES 75008 PARIS<br>
+            <strong>SIREN:</strong> 995 347 556<br>
+            <strong>SIRET:</strong> 995 347 556 00012<br>
+            <strong>VAT Number:</strong> FR15 995 347 556<br>
+            <strong>NAF/APE Code:</strong> 62.01Z (Computer programming activities)<br>
+            <strong>Email:</strong> contact@suppleye.co
+        </p>
 
-        <h2>2. Hébergement</h2>
-        <p>Ce site est hébergé par Render Services Inc.<br>
-        Adresse : 525 Brannan St, Suite 300, San Francisco, CA 94107, USA.</p>
+        <h2>2. Hosting</h2>
+        <p>This website is hosted by <strong>Render Services Inc.</strong><br>
+        Address: 525 Brannan St, Suite 300, San Francisco, CA 94107, USA.</p>
 
-        <h2>3. Propriété intellectuelle</h2>
-        <p>L'ensemble de ce site relève de la législation française et internationale sur le droit d'auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour les documents téléchargeables et les représentations iconographiques et photographiques.</p>
+        <h2>3. Intellectual Property</h2>
+        <p>The entire content of this site is subject to French and international legislation on copyright and intellectual property. All reproduction rights are reserved, including for downloadable documents and iconographic and photographic representations.</p>
 
-        <h2>4. Données personnelles</h2>
-        <p>Conformément à la loi « Informatique et Libertés » et au RGPD, vous disposez d'un droit d'accès, de modification et de suppression des données vous concernant. Pour exercer ce droit, contactez-nous par email.</p>
+        <h2>4. Personal Data</h2>
+        <p>In accordance with the "Informatique et Libertés" law and the GDPR, you have the right to access, modify, and delete data concerning you. To exercise this right, please contact us by email.</p>
     </div>
 </body>
 </html>

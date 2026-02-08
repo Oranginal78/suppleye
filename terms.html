@@ -1,39 +1,92 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conditions Générales - Suppl'Eye</title>
+    <title>Terms & Conditions - Suppl'Eye</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body { background-color: #F4F6F6; color: #151515; padding: 40px 20px; }
-        .legal-container { max-width: 800px; margin: 0 auto; background: white; padding: 40px; border-radius: 20px; }
-        h1 { margin-bottom: 30px; color: #00331D; }
-        h2 { margin-top: 20px; margin-bottom: 10px; font-size: 1.2rem; color: #006837; }
-        p { margin-bottom: 15px; line-height: 1.6; }
-        .back-link { display: inline-block; margin-bottom: 20px; color: #151515; text-decoration: none; font-weight: 600; }
+        body { 
+            background-color: #151515; 
+            color: #151515; 
+            padding: 40px; 
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .legal-card { 
+            background-color: #FFFFFF;
+            width: 100%;
+            max-width: 1000px;
+            border-radius: 60px;
+            padding: 80px;
+            margin: 0 auto;
+        }
+        h1 { 
+            font-size: 3rem; 
+            font-weight: 500; 
+            color: #00331D; 
+            margin-bottom: 40px; 
+            letter-spacing: -0.02em;
+        }
+        h2 { 
+            margin-top: 30px; 
+            margin-bottom: 15px; 
+            font-size: 1.5rem; 
+            color: #006837; 
+            font-weight: 600;
+        }
+        p { 
+            margin-bottom: 15px; 
+            line-height: 1.6; 
+            color: #151515;
+            font-size: 1.05rem;
+        }
+        .back-link { 
+            display: inline-flex; 
+            align-items: center;
+            margin-bottom: 40px; 
+            color: #00331D; 
+            text-decoration: none; 
+            font-weight: 600; 
+            gap: 8px;
+            transition: transform 0.2s;
+        }
+        .back-link:hover { transform: translateX(-5px); }
+        
+        @media (max-width: 768px) {
+            body { padding: 20px; }
+            .legal-card { padding: 30px; border-radius: 30px; }
+            h1 { font-size: 2rem; }
+        }
     </style>
 </head>
 <body>
-    <div class="legal-container">
-        <a href="index.html" class="back-link">← Retour à l'accueil</a>
-        <h1>Conditions Générales d'Utilisation et de Vente</h1>
+    <div class="legal-card">
+        <a href="index.html" class="back-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            Back to Home
+        </a>
+        <h1>Terms & Conditions</h1>
 
-        <h2>1. Objet</h2>
-        <p>Les présentes conditions régissent les prestations de services de production visuelle assistée par intelligence artificielle fournies par Suppl'Eye.</p>
+        <p><strong>Suppl'Eye</strong> is a service provided by <strong>VELAR</strong> (SAS, SIREN 995 347 556).</p>
+
+        <h2>1. Purpose</h2>
+        <p>These terms govern the visual production services assisted by artificial intelligence provided by Suppl'Eye.</p>
 
         <h2>2. Services</h2>
-        <p>Suppl'Eye propose la création de visuels produits, de mises en scène 3D et de retouches via des outils d'IA générative supervisés par des experts humains.</p>
+        <p>Suppl'Eye offers the creation of product visuals, 3D staging, and retouching via generative AI tools supervised by human experts.</p>
 
-        <h2>3. Propriété des visuels</h2>
-        <p>Sauf mention contraire au devis, les visuels finaux livrés au client lui sont cédés pour une utilisation commerciale, sous réserve du paiement intégral de la prestation.</p>
+        <h2>3. Ownership of Visuals</h2>
+        <p>Unless otherwise stated in the quote, the final visuals delivered to the client are transferred to them for commercial use, subject to full payment of the service.</p>
 
-        <h2>4. Responsabilité</h2>
-        <p>Suppl'Eye s'engage à une obligation de moyens. Le client est responsable de s'assurer qu'il détient les droits sur les produits physiques ou les images de base fournies pour la création des visuels.</p>
+        <h2>4. Liability</h2>
+        <p>Suppl'Eye is committed to an obligation of means. The client is responsible for ensuring that they hold the rights to the physical products or base images provided for the creation of visuals.</p>
 
-        <h2>5. Loi applicable</h2>
-        <p>Tout litige relatif à l'interprétation et à l'exécution des présentes conditions générales est soumis au droit français.</p>
+        <h2>5. Applicable Law</h2>
+        <p>Any dispute relating to the interpretation and execution of these general conditions is subject to French law.</p>
     </div>
 </body>
 </html>

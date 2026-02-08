@@ -1,39 +1,92 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Politique de Confidentialité - Suppl'Eye</title>
+    <title>Privacy Policy - Suppl'Eye</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body { background-color: #F4F6F6; color: #151515; padding: 40px 20px; }
-        .legal-container { max-width: 800px; margin: 0 auto; background: white; padding: 40px; border-radius: 20px; }
-        h1 { margin-bottom: 30px; color: #00331D; }
-        h2 { margin-top: 20px; margin-bottom: 10px; font-size: 1.2rem; color: #006837; }
-        p { margin-bottom: 15px; line-height: 1.6; }
-        .back-link { display: inline-block; margin-bottom: 20px; color: #151515; text-decoration: none; font-weight: 600; }
+        body { 
+            background-color: #151515; 
+            color: #151515; 
+            padding: 40px; 
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .legal-card { 
+            background-color: #FFFFFF;
+            width: 100%;
+            max-width: 1000px;
+            border-radius: 60px;
+            padding: 80px;
+            margin: 0 auto;
+        }
+        h1 { 
+            font-size: 3rem; 
+            font-weight: 500; 
+            color: #00331D; 
+            margin-bottom: 40px; 
+            letter-spacing: -0.02em;
+        }
+        h2 { 
+            margin-top: 30px; 
+            margin-bottom: 15px; 
+            font-size: 1.5rem; 
+            color: #006837; 
+            font-weight: 600;
+        }
+        p { 
+            margin-bottom: 15px; 
+            line-height: 1.6; 
+            color: #151515;
+            font-size: 1.05rem;
+        }
+        .back-link { 
+            display: inline-flex; 
+            align-items: center;
+            margin-bottom: 40px; 
+            color: #00331D; 
+            text-decoration: none; 
+            font-weight: 600; 
+            gap: 8px;
+            transition: transform 0.2s;
+        }
+        .back-link:hover { transform: translateX(-5px); }
+        
+        @media (max-width: 768px) {
+            body { padding: 20px; }
+            .legal-card { padding: 30px; border-radius: 30px; }
+            h1 { font-size: 2rem; }
+        }
     </style>
 </head>
 <body>
-    <div class="legal-container">
-        <a href="index.html" class="back-link">← Retour à l'accueil</a>
-        <h1>Politique de Confidentialité</h1>
+    <div class="legal-card">
+        <a href="index.html" class="back-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            Back to Home
+        </a>
+        <h1>Privacy Policy</h1>
 
-        <h2>1. Collecte des données</h2>
-        <p>Nous collectons uniquement les données que vous nous transmettez volontairement via email (nom, adresse email, message) dans le cadre d'une prise de contact commerciale.</p>
+        <p><strong>Suppl'Eye</strong> is a service provided by <strong>VELAR</strong> (SAS, SIREN 995 347 556).</p>
 
-        <h2>2. Utilisation des données</h2>
-        <p>Ces données sont utilisées exclusivement pour répondre à vos demandes, établir des devis ou vous informer sur nos services de production visuelle.</p>
+        <h2>1. Data Collection</h2>
+        <p>We only collect data that you voluntarily provide to us via email (name, email address, message) in the context of a commercial contact.</p>
 
-        <h2>3. Partage des données</h2>
-        <p>Vos données personnelles ne sont jamais vendues, louées ou cédées à des tiers à des fins commerciales.</p>
+        <h2>2. Use of Data</h2>
+        <p>This data is used exclusively to respond to your requests, establish quotes, or inform you about our visual production services.</p>
 
-        <h2>4. Sécurité</h2>
-        <p>Nous mettons en œuvre des mesures de sécurité standard pour protéger vos informations contre l'accès non autorisé.</p>
+        <h2>3. Data Sharing</h2>
+        <p>Your personal data is never sold, rented, or transferred to third parties for commercial purposes.</p>
 
-        <h2>5. Vos droits</h2>
-        <p>Vous pouvez demander à tout moment l'accès, la rectification ou l'effacement de vos données personnelles en nous contactant à contact@suppleye.co.</p>
+        <h2>4. Security</h2>
+        <p>We implement standard security measures to protect your information against unauthorized access.</p>
+
+        <h2>5. Your Rights</h2>
+        <p>You may request access to, rectification of, or deletion of your personal data at any time by contacting us at <strong>contact@suppleye.co</strong>.</p>
     </div>
 </body>
 </html>
