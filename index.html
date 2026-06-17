@@ -1,9 +1,27 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Mark JS as available so scroll-reveal styles only apply when JS can run. -->
+    <script>document.documentElement.classList.add('js');</script>
     <title>Suppl'Eye - Revolutionizing Product Imagery</title>
+    <meta name="description" content="Suppl'Eye is an AI-powered visual production service helping e-commerce brands create, scale, and optimize product visuals built for performance.">
+    <link rel="canonical" href="https://suppleye.co/">
+
+    <!-- Open Graph / social sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Suppl'Eye - Revolutionizing Product Imagery">
+    <meta property="og:description" content="AI-powered visual production helping e-commerce brands create, scale, and optimize product visuals built for performance.">
+    <meta property="og:url" content="https://suppleye.co/">
+    <meta property="og:image" content="https://suppleye.co/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Suppl'Eye - Revolutionizing Product Imagery">
+    <meta name="twitter:description" content="AI-powered visual production helping e-commerce brands create, scale, and optimize product visuals built for performance.">
+    <meta name="twitter:image" content="https://suppleye.co/og-image.jpg">
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,31 +32,30 @@
     <section class="hero">
         <header class="hero-header">
             <div class="logo">
-                <img src="logos/8bae66f1-405d-4c92-8c4a-6d8e7df6c9bb.png" alt="Suppl'Eye Logo">
+                <img src="logos/logos web/8bae66f1-405d-4c92-8c4a-6d8e7df6c9bb.webp" alt="Suppl'Eye" width="1536" height="375" fetchpriority="high">
             </div>
             <div class="header-tagline">
                 <p>Designed to Convert<br>Built to Scale</p>
             </div>
         </header>
-        
+
         <div class="hero-content">
             <h1>To revolutionize product imagery<br>and elevate online conversion standards.</h1>
-            <a href="#welcome" class="vision-badge" style="text-decoration: none; color: inherit; display: inline-block; cursor: pointer;">VISION</a>
+            <a href="#welcome" class="vision-badge">VISION</a>
         </div>
     </section>
 
     <!-- Section 2: Welcome -->
     <section id="welcome" class="welcome-section">
         <div class="welcome-header">
-            <h2>Welcome to<br>Suppl’Eye</h2>
-            <!-- Decoration removed as requested -->
-            <p class="welcome-subtitle">
-                Suppl’Eye is an AI-powered visual production service helping e-commerce brands create,<br>
+            <h2 class="reveal">Welcome to<br>Suppl'Eye</h2>
+            <p class="welcome-subtitle reveal" style="--reveal-delay: 0.1s">
+                Suppl'Eye is an AI-powered visual production service helping e-commerce brands create,<br>
                 scale, and optimize product visuals built for performance.
             </p>
-            <a href="#about" class="btn-discover">
-                DISCOVER MORE 
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a href="#about" class="btn-discover reveal" style="--reveal-delay: 0.2s">
+                DISCOVER MORE
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                     <circle cx="12" cy="12" r="11" stroke="white" stroke-width="2"/>
                     <path d="M8 10L12 14L16 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
@@ -48,25 +65,25 @@
         <div class="bento-grid">
             <!-- Row 1 -->
             <!-- 1. Sofa -->
-            <div class="bento-item item-sofa">
-                <img src="images/images section 2/CANAPE_MAISONDUMONDE_4-5.webp" alt="Sofa">
+            <div class="bento-item item-sofa reveal" style="--reveal-delay: 0s">
+                <img src="images/images section 2/CANAPE_MAISONDUMONDE_4-5.webp" alt="Sofa staged for an interior product shoot" loading="lazy" decoding="async">
             </div>
 
             <!-- 2. Tech (Wide) -->
-            <div class="bento-item item-tech wide">
-                <img src="images/images section 2/hf_20260125_210313_895ff56e-d633-4cd3-8ae8-7717def59bd0.webp" alt="Tech">
+            <div class="bento-item item-tech wide reveal" style="--reveal-delay: 0.08s">
+                <img src="images/images section 2/hf_20260125_210313_895ff56e-d633-4cd3-8ae8-7717def59bd0.webp" alt="Tech product visual" loading="lazy" decoding="async">
             </div>
 
             <!-- 3. Cream -->
-            <div class="bento-item item-cream">
-                <img src="images/images section 2/b717a8f4-27f3-4521-b960-d2383b25f56b (1).webp" alt="Cream">
+            <div class="bento-item item-cream reveal" style="--reveal-delay: 0.16s">
+                <img src="images/images section 2/b717a8f4-27f3-4521-b960-d2383b25f56b (1).webp" alt="Cosmetic cream product visual" loading="lazy" decoding="async">
             </div>
 
             <!-- Row 2 -->
             <!-- 4. Badge Left -->
-            <div class="bento-item badge-dark item-badge-1">
+            <div class="bento-item badge-dark item-badge-1 reveal" style="--reveal-delay: 0.24s">
                 <div class="badge-icon">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#F0FF3D" stroke-width="1.5">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#F0FF3D" stroke-width="1.5" aria-hidden="true">
                         <rect x="2" y="6" width="20" height="12" rx="2"/>
                         <circle cx="12" cy="12" r="2"/>
                         <path d="M6 12h.01M18 12h.01"/>
@@ -76,19 +93,19 @@
             </div>
 
             <!-- 5. Rower -->
-            <div class="bento-item item-rower">
-                <img src="images/images section 2/hf_20260119_142123_4a612132-59cf-4c04-babf-355695bb8394 (1).webp" alt="Rower">
+            <div class="bento-item item-rower reveal" style="--reveal-delay: 0.32s">
+                <img src="images/images section 2/hf_20260119_142123_4a612132-59cf-4c04-babf-355695bb8394 (1).webp" alt="Rowing machine product visual" loading="lazy" decoding="async">
             </div>
 
             <!-- 6. Ring -->
-            <div class="bento-item item-ring">
-                <img src="images/images section 2/BAGUE1.webp" alt="Jewelry">
+            <div class="bento-item item-ring reveal" style="--reveal-delay: 0.4s">
+                <img src="images/images section 2/BAGUE1.webp" alt="Jewelry ring product visual" loading="lazy" decoding="async">
             </div>
 
             <!-- 7. Badge Right -->
-            <div class="bento-item badge-dark item-badge-2">
+            <div class="bento-item badge-dark item-badge-2 reveal" style="--reveal-delay: 0.48s">
                 <div class="badge-icon">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#F0FF3D" stroke-width="1.5">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#F0FF3D" stroke-width="1.5" aria-hidden="true">
                         <path d="M3 21h18M5 21V7l8-4 8 4v14M8 21v-9a4 4 0 1 1 8 0v9"/>
                     </svg>
                 </div>
@@ -97,35 +114,166 @@
         </div>
     </section>
     <!-- Section 3: About -->
-    <section id="about" class="about-section">
+    <section id="about" class="about-section reveal about-wipe">
         <div class="about-header">
-            <h3>ABOUT SUPPL'EYE</h3>
+            <h2>ABOUT SUPPL'EYE</h2>
             <div class="about-line"></div>
         </div>
         <div class="about-content">
             <div class="about-logo">
-                <img src="logos/logos web/jaune caré.webp" alt="Suppl'Eye Icon">
+                <img src="logos/logos web/jaune caré.webp" alt="Suppl'Eye icon" width="1080" height="1080" loading="lazy" decoding="async">
             </div>
             <div class="about-text">
                 <p>Suppl'Eye was founded by a <strong>3D artist</strong> and a <strong>product-shoot specialist</strong> with deep expertise in product staging and visual execution.</p>
                 <p>As <strong>AI matured</strong>, we saw that many straightforward visual needs could be semi-automated, allowing brands to <strong>diversify creatives</strong>, <strong>reduce fatigue</strong>, and <strong>scale production</strong> while keeping <strong>strict control</strong> over product accuracy.</p>
                 <p><strong>Human expertise</strong> remains central: our trained eye supervises AI to ensure visuals stay <strong>consistent, reliable, and ad-ready.</strong></p>
-                <div class="about-footer-logo">Suppl’Eye</div>
+                <div class="about-footer-logo">Suppl'Eye</div>
             </div>
         </div>
     </section>
 
-    <!-- Section 4: Contact / Footer -->
+    <!-- Section 4: One system / Flexible visuals -->
+    <section id="system" class="system-section">
+        <div class="system-top">
+            <h2 class="system-title reveal">One system. Every E-commerce<br>visual need.</h2>
+        </div>
+
+        <div class="system-body">
+            <div class="system-intro reveal">
+                <div class="system-arrow" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#F0FF3D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M7 7 17 17"/>
+                        <path d="M17 9v8H9"/>
+                    </svg>
+                </div>
+                <p>A semi-automated production system delivering consistent, high-end product photos and videos across all e-commerce formats.</p>
+                <p><strong>Not a SaaS.</strong><br>A human-operated visual production engine built for scale, control, and premium quality.</p>
+            </div>
+
+            <div class="system-grid">
+                <div class="sys-tile sys-photo sys-front reveal">
+                    <img src="images/system/front.webp" alt="White sneaker, front view, on a geometric studio set" width="738" height="1100" loading="lazy" decoding="async">
+                </div>
+
+                <div class="sys-tile sys-photo sys-floating reveal" style="--reveal-delay: 0.08s">
+                    <img src="images/system/floating.webp" alt="White sneaker floating above a colourful geometric set" width="1376" height="768" loading="lazy" decoding="async">
+                </div>
+
+                <div class="sys-tile sys-photo sys-side reveal" style="--reveal-delay: 0.16s">
+                    <img src="images/system/side.webp" alt="White sneaker, side view, on a studio set" width="738" height="1100" loading="lazy" decoding="async">
+                </div>
+
+                <div class="sys-tile sys-photo sys-angle reveal" style="--reveal-delay: 0.24s">
+                    <img src="images/system/angle.webp" alt="White sneaker, three-quarter view, on a geometric set" width="1000" height="1000" loading="lazy" decoding="async">
+                </div>
+
+                <div class="sys-tile sys-photo sys-top reveal" style="--reveal-delay: 0.32s">
+                    <img src="images/system/top.webp" alt="White sneaker, top-down view, on a studio set" width="738" height="1100" loading="lazy" decoding="async">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Powered by the best AI models -->
+    <section id="models" class="models-section">
+        <div class="models-inner">
+            <div class="models-text reveal">
+                <h2 class="models-title">Always Powered by<br>the Best AI Models</h2>
+                <p>Suppl'Eye actively monitors, tests, and operates the most advanced AI models available.</p>
+                <p>We integrate them into a semi-automated production system run by our creative and technical team, ensuring cutting-edge visuals, consistent quality, and scalable performance.</p>
+                <span class="models-tag">Future-Proof Visual Production</span>
+            </div>
+
+            <div class="models-orbit reveal" style="--reveal-delay: 0.1s">
+                <svg class="orbit-rings" viewBox="0 0 1000 760" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+                    <g class="rings-group">
+                        <rect x="350" y="280" width="300" height="200" rx="100"/>
+                        <rect x="270" y="230" width="460" height="300" rx="150"/>
+                        <rect x="190" y="180" width="620" height="400" rx="200"/>
+                        <rect x="110" y="130" width="780" height="500" rx="250"/>
+                        <rect x="30"  y="80"  width="940" height="600" rx="300"/>
+                    </g>
+                </svg>
+
+                <div class="orbit-pill">some of our<br>current models</div>
+
+                <div class="orbit-rotor">
+                    <img class="orbit-logo ol-kling"     src="images/models/kling.webp"     alt="KlingAI"   width="256" height="256" loading="lazy" decoding="async">
+                    <img class="orbit-logo ol-openai"    src="images/models/openai.webp"    alt="OpenAI"    width="256" height="256" loading="lazy" decoding="async">
+                    <img class="orbit-logo ol-triangle"  src="images/models/triangle.webp"  alt="AI model"  width="256" height="256" loading="lazy" decoding="async">
+                    <img class="orbit-logo ol-bytedance" src="images/models/bytedance.webp" alt="ByteDance" width="256" height="256" loading="lazy" decoding="async">
+                    <img class="orbit-logo ol-google"    src="images/models/google.webp"    alt="Google"    width="256" height="256" loading="lazy" decoding="async">
+                    <img class="orbit-logo ol-purple"    src="images/models/purple.webp"    alt="AI model"  width="256" height="256" loading="lazy" decoding="async">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Updatable Promotional Text -->
+    <section id="promo" class="system-section">
+        <div class="system-top">
+            <h2 class="system-title reveal">Updatable<br>Promotional Text</h2>
+        </div>
+
+        <div class="system-body">
+            <div class="system-intro reveal">
+                <div class="system-arrow" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#F0FF3D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M7 7 17 17"/>
+                        <path d="M17 9v8H9"/>
+                    </svg>
+                </div>
+                <p>Text is part of the deliverable. Every visual includes customizable copy that can be updated regularly to match seasonal promotions, campaigns, and business priorities.</p>
+                <p>Our system allows monthly updates, ensuring your visuals always reflect the right message at the right time.</p>
+            </div>
+
+            <div class="promo-grid">
+                <div class="promo-col promo-col--center">
+                    <div class="sys-tile sys-photo promo-photo r-tall reveal">
+                        <img src="images/promo/keyboard.webp" alt="Mechanical keyboard promotional visual — KeyForge" width="848" height="1264" loading="lazy" decoding="async">
+                    </div>
+                </div>
+
+                <div class="promo-col">
+                    <div class="sys-tile promo-clean reveal" style="--reveal-delay: 0.08s">
+                        <img src="images/promo/icon-monitor.webp" alt="" class="promo-icon" loading="lazy" decoding="async">
+                        <span>Clean,<br>modern design</span>
+                    </div>
+                    <div class="sys-tile sys-photo promo-photo r-tall reveal" style="--reveal-delay: 0.16s">
+                        <img src="images/promo/core.webp" alt="Power bank promotional visual — Core+ Power That Moves" width="848" height="1264" loading="lazy" decoding="async">
+                    </div>
+                </div>
+
+                <div class="promo-col promo-col--center">
+                    <div class="sys-tile sys-photo promo-photo r-coffee reveal" style="--reveal-delay: 0.24s">
+                        <img src="images/promo/coffee.webp" alt="Stacked espresso cups promotional visual" width="1128" height="1400" loading="lazy" decoding="async">
+                    </div>
+                </div>
+
+                <div class="promo-col">
+                    <div class="sys-tile promo-fast reveal" style="--reveal-delay: 0.32s">
+                        <img src="images/promo/icon-fast.webp" alt="" class="promo-icon" loading="lazy" decoding="async">
+                        <div class="promo-fast-text"><strong>Fast</strong><span>SUPPORT &amp; EDIT</span></div>
+                    </div>
+                    <div class="sys-tile sys-photo promo-photo r-tall reveal" style="--reveal-delay: 0.4s">
+                        <img src="images/promo/rower.webp" alt="Rowing machine promotional visual — Build Your Power" width="939" height="1400" loading="lazy" decoding="async">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: Contact / Footer -->
     <section class="contact-section">
-        <div class="contact-card">
+        <div class="contact-card reveal">
             <div class="contact-content">
-                <h2 class="contact-title">Let’s talk</h2>
+                <h2 class="contact-title">Let's talk</h2>
                 <p class="contact-subtitle">We usually reply within 24h.</p>
-                
+
                 <div class="contact-info">
-                    <p>contact us for more information:</p>
+                    <p>Contact us for more information:</p>
                     <a href="mailto:contact@suppleye.co" class="contact-email">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
                             <circle cx="12" cy="12" r="10"/>
                             <path d="M2 12h20"/>
                             <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
@@ -134,16 +282,18 @@
                     </a>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
-                <div class="copyright">© 2026 Suppl’Eye. All rights reserved.</div>
+                <div class="copyright">© 2026 Suppl'Eye. All rights reserved.</div>
                 <div class="legal-links">
-                    <a href="legal-notice.html">Legal notice</a> · 
-                    <a href="privacy-policy.html">Privacy policy</a> · 
+                    <a href="legal-notice.html">Legal notice</a> ·
+                    <a href="privacy-policy.html">Privacy policy</a> ·
                     <a href="terms.html">Terms</a>
                 </div>
             </div>
         </div>
     </section>
+
+    <script src="main.js" defer></script>
 </body>
 </html>
