@@ -51,3 +51,29 @@
     });
 })();
 
+// About logo: drifts gently toward the cursor while it floats.
+(function () {
+    var mq = window.matchMedia;
+    var reduced = mq && mq('(prefers-reduced-motion: reduce)').matches;
+    var finePointer = mq && mq('(pointer: fine)').matches;
+    if (reduced || !finePointer) return; // skip on touch / reduced-motion
+
+    var section = document.querySelector('.about-section');
+    var logo = document.querySelector('.about-logo');
+    if (!section || !logo) return;
+
+    var MAX = 22; // max drift in px
+
+    section.addEventListener('mousemove', function (e) {
+        var rect = section.getBoundingClientRect();
+        var dx = (e.clientX - (rect.left + rect.width / 2)) / (rect.width / 2);
+        var dy = (e.clientY - (rect.top + rect.height / 2)) / (rect.height / 2);
+        logo.style.transform = 'translate(' + (dx * MAX).toFixed(1) + 'px, ' +
+                               (dy * MAX).toFixed(1) + 'px)';
+    });
+
+    section.addEventListener('mouseleave', function () {
+        logo.style.transform = '';
+    });
+})();
+

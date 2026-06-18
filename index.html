@@ -227,10 +227,22 @@
                 <p>Our system allows monthly updates, ensuring your visuals always reflect the right message at the right time.</p>
             </div>
 
+            <!-- DOM order is tuned for the mobile masonry (column-count);
+                 desktop column order is restored via `order` in CSS. -->
             <div class="promo-grid">
                 <div class="promo-col promo-col--center">
                     <div class="sys-tile sys-photo promo-photo r-tall reveal">
                         <img src="images/promo/keyboard.webp" alt="Mechanical keyboard promotional visual — KeyForge" width="848" height="1264" loading="lazy" decoding="async">
+                    </div>
+                </div>
+
+                <div class="promo-col">
+                    <div class="sys-tile promo-fast reveal" style="--reveal-delay: 0.32s">
+                        <img src="images/promo/icon-fast.webp" alt="" class="promo-icon" loading="lazy" decoding="async">
+                        <div class="promo-fast-text"><strong>Fast</strong><span>SUPPORT &amp; EDIT</span></div>
+                    </div>
+                    <div class="sys-tile sys-photo promo-photo r-tall reveal" style="--reveal-delay: 0.4s">
+                        <img src="images/promo/rower.webp" alt="Rowing machine promotional visual — Build Your Power" width="939" height="1400" loading="lazy" decoding="async">
                     </div>
                 </div>
 
@@ -249,21 +261,318 @@
                         <img src="images/promo/coffee.webp" alt="Stacked espresso cups promotional visual" width="1128" height="1400" loading="lazy" decoding="async">
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="promo-col">
-                    <div class="sys-tile promo-fast reveal" style="--reveal-delay: 0.32s">
-                        <img src="images/promo/icon-fast.webp" alt="" class="promo-icon" loading="lazy" decoding="async">
-                        <div class="promo-fast-text"><strong>Fast</strong><span>SUPPORT &amp; EDIT</span></div>
+    <!-- Section 7: Core Values -->
+    <section id="values" class="values-section">
+        <div class="values-header">
+            <span class="values-tag reveal">Building Trust<br>Inspiring Growth</span>
+            <h2 class="values-title reveal" style="--reveal-delay: 0.08s">Core Values</h2>
+        </div>
+
+        <div class="values-grid">
+            <article class="value-card value-card--growth reveal" style="--reveal-delay: 0s">
+                <div class="value-icon">
+                    <img src="images/values/growth.webp" alt="" width="256" height="256" loading="lazy" decoding="async">
+                </div>
+                <h3 class="value-name">Growth</h3>
+                <p class="value-desc">Improve our partners' conversion rates.</p>
+            </article>
+
+            <article class="value-card value-card--flex reveal" style="--reveal-delay: 0.08s">
+                <div class="value-icon">
+                    <img src="images/values/flexibility.webp" alt="" width="256" height="256" loading="lazy" decoding="async">
+                </div>
+                <h3 class="value-name">Flexibility</h3>
+                <p class="value-desc">High responsiveness to client requests, zero creative fatigue, and an expanded creative playground.</p>
+            </article>
+
+            <article class="value-card value-card--prod reveal" style="--reveal-delay: 0.16s">
+                <div class="value-icon">
+                    <img src="images/values/productivity.webp" alt="" width="256" height="256" loading="lazy" decoding="async">
+                </div>
+                <h3 class="value-name">Productivity</h3>
+                <p class="value-desc">Significant time savings and reduced workload for our clients.</p>
+            </article>
+
+            <article class="value-card value-card--perf reveal" style="--reveal-delay: 0.24s">
+                <div class="value-icon">
+                    <img src="images/values/performance.webp" alt="" width="256" height="256" loading="lazy" decoding="async">
+                </div>
+                <h3 class="value-name">Performance</h3>
+                <p class="value-desc">All of this at a dramatically lower cost compared to traditional visual production.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Section 8: Insights (compact stats band) -->
+    <section id="insights" class="insights-section">
+        <div class="insights-band reveal">
+            <div class="insight">
+                <span class="insight-stat">0.05 seconds</span>
+                <p class="insight-desc">Time a user takes to form an opinion about a product. Visuals come first.</p>
+            </div>
+            <div class="insight">
+                <span class="insight-stat">+5% to +15%</span>
+                <p class="insight-desc">Increase in marketing productivity enabled by AI.</p>
+            </div>
+            <div class="insight">
+                <span class="insight-stat">+20%</span>
+                <p class="insight-desc">Increase in ROI for companies optimizing their visuals with AI compared to competitors who don't.</p>
+            </div>
+            <div class="insight">
+                <span class="insight-stat">~50%</span>
+                <p class="insight-desc">Reduction in visual content production costs compared to traditional studio production.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 9: Compare -->
+    <section id="compare" class="compare-section">
+        <div class="compare-head">
+            <h2 class="compare-title reveal">Compare</h2>
+        </div>
+
+        <div class="compare-grid">
+            <article class="cmp-card reveal">
+                <h3 class="cmp-card-title">Classic shooting</h3>
+                <ul class="cmp-list">
+                    <li><span class="cmp-crit">Average cost</span>High and often unpredictable production costs per campaign.</li>
+                    <li><span class="cmp-crit">Production deadlines</span>2 to 3 weeks.</li>
+                    <li><span class="cmp-crit">AI tools</span>No AI tools or enhancements.</li>
+                    <li><span class="cmp-crit">Participation in the shooting</span>Obligation to travel or not attend, risking obtaining content that is not in line with your brand.</li>
+                </ul>
+            </article>
+
+            <article class="cmp-card reveal" style="--reveal-delay: 0.08s">
+                <h3 class="cmp-card-title">AI SaaS tools</h3>
+                <ul class="cmp-list">
+                    <li><span class="cmp-crit">Average cost</span>Lower subscription cost, but time-consuming for your team.</li>
+                    <li><span class="cmp-crit">Production deadlines</span>Limited to a few products per week before creative fatigue appears.</li>
+                    <li><span class="cmp-crit">AI tools</span>Not fully automated, approximate product match, requires constant manual control, multiple subscriptions and no guarantee you use the best tool at any given time.</li>
+                    <li><span class="cmp-crit">Participation in the shooting</span>You manage everything yourself: prompts, iterations, exports, and uploads.</li>
+                </ul>
+            </article>
+
+            <article class="cmp-card cmp-card--us reveal" style="--reveal-delay: 0.16s">
+                <h3 class="cmp-card-title">Suppl'Eye</h3>
+                <ul class="cmp-list">
+                    <li><span class="cmp-crit">Average cost</span>Transparent pricing structure. Significant savings on production costs while maintaining premium quality standards.</li>
+                    <li><span class="cmp-crit">Production deadlines</span>More than 10 ads produced per day (video, photo, and text edits), including 4K, optimized for e-commerce platforms and social media.</li>
+                    <li><span class="cmp-crit">AI tools</span>We ensure access to the best AI tools through continuous monitoring to guarantee the best quality-to-time ratio and perfect alignment with your brand identity.</li>
+                    <li><span class="cmp-crit">Participation in the shooting</span>Give us your instructions and feedback and be 100% satisfied with the final result.</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <!-- Section 10: Production Limits -->
+    <section id="limits" class="limits-section">
+        <div class="limits-inner">
+            <h2 class="limits-title reveal">Production<br>Limits</h2>
+
+            <div class="limits-chart reveal" style="--reveal-delay: 0.1s">
+                <div class="limit-col">
+                    <span class="limit-name">Classic shooting</span>
+                    <div class="limit-bars">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar is-on"></span>
                     </div>
-                    <div class="sys-tile sys-photo promo-photo r-tall reveal" style="--reveal-delay: 0.4s">
-                        <img src="images/promo/rower.webp" alt="Rowing machine promotional visual — Build Your Power" width="939" height="1400" loading="lazy" decoding="async">
+                    <span class="limit-value">1–10<br>/month</span>
+                </div>
+
+                <div class="limit-col">
+                    <span class="limit-name">3D / Editing</span>
+                    <div class="limit-bars">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar is-on"></span>
+                        <span class="bar is-on"></span>
                     </div>
+                    <span class="limit-value">1–10<br>/month</span>
+                </div>
+
+                <div class="limit-col">
+                    <span class="limit-name">AI SaaS</span>
+                    <div class="limit-bars">
+                        <span class="bar"></span>
+                        <span class="bar is-on"></span>
+                        <span class="bar is-on"></span>
+                        <span class="bar is-on"></span>
+                    </div>
+                    <span class="limit-value">10–30<br>/month</span>
+                </div>
+
+                <div class="limit-col">
+                    <span class="limit-name">Suppl'Eye</span>
+                    <div class="limit-bars">
+                        <span class="bar is-on"></span>
+                        <span class="bar is-on"></span>
+                        <span class="bar is-on"></span>
+                        <span class="bar is-on"></span>
+                    </div>
+                    <span class="limit-value">100–200<br>/month</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section 7: Contact / Footer -->
+    <!-- Section 11: Exploring our other services -->
+    <section id="other-services" class="services-intro">
+        <h2 class="services-intro-title reveal">Exploring our other services<br>for E-commerce</h2>
+
+        <div class="services-bento">
+            <div class="sb-item sb-headphones reveal" style="--reveal-delay: 0s">
+                <img src="images/services/web-color.webp" alt="Interactive headphone colour configurator" width="2048" height="1555" loading="lazy" decoding="async">
+            </div>
+            <div class="sb-item sb-ugc1 reveal" style="--reveal-delay: 0.08s">
+                <img src="images/services/ugc-man.webp" alt="Creator filming a UGC product video" width="768" height="1376" loading="lazy" decoding="async">
+            </div>
+            <div class="sb-item sb-ugc2 reveal" style="--reveal-delay: 0.16s">
+                <img src="images/services/ugc-woman-mirror.webp" alt="Creator presenting a skincare product" width="768" height="1376" loading="lazy" decoding="async">
+            </div>
+            <div class="sb-item sb-portrait reveal" style="--reveal-delay: 0.24s">
+                <img src="images/services/hairclip-woman.webp" alt="Model styled with blue hair clips" width="928" height="1152" loading="lazy" decoding="async">
+            </div>
+            <div class="sb-block sb-green reveal" style="--reveal-delay: 0.32s"></div>
+            <div class="sb-block sb-yellow reveal" style="--reveal-delay: 0.4s"></div>
+        </div>
+    </section>
+
+    <!-- Section 12: Ad Partner -->
+    <section id="ad-partner" class="adpartner-section">
+        <div class="adpartner-inner">
+            <div class="adpartner-hero reveal">
+                <img src="images/services/orchard.webp" alt="Suppl'Eye product staging in an orchard scene" width="1376" height="768" loading="lazy" decoding="async">
+            </div>
+            <div class="adpartner-body">
+                <div class="adpartner-text reveal">
+                    <h2 class="adpartner-title">Ad Partner</h2>
+                    <p>If you don't already have a paid media solution, Suppl'Eye can integrate Wizads, our paid media partner, to handle ad strategy and post sponsoring directly within your package.</p>
+                </div>
+                <div class="adpartner-logo reveal" style="--reveal-delay: 0.1s">
+                    <img src="images/services/wizads.webp" alt="Wizads — paid media partner" width="200" height="200" loading="lazy" decoding="async">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 13: AI UGC Content -->
+    <section id="ai-ugc" class="svc-section">
+        <div class="svc-inner">
+            <div class="svc-head reveal">
+                <h2 class="svc-title">AI UGC<br>Content</h2>
+                <div class="svc-intro">
+                    <p>High-performance AI-powered UGC visuals designed to build trust, boost engagement, and increase conversion rates across all e-commerce and paid media channels.</p>
+                </div>
+            </div>
+
+            <div class="svc-cards">
+                <article class="svc-card svc-card--sage reveal">
+                    <div class="svc-card-media"><img src="images/services/ugc-man.webp" alt="Authentic AI UGC creator video" width="768" height="1376" loading="lazy" decoding="async"></div>
+                    <div class="svc-card-body">
+                        <h3 class="svc-card-name">Trust-Driven UGC</h3>
+                        <p class="svc-card-desc">Authentic-looking AI UGC visuals built to create credibility, emotional connection, and brand trust.</p>
+                    </div>
+                </article>
+                <article class="svc-card svc-card--yellow reveal" style="--reveal-delay: 0.08s">
+                    <div class="svc-card-media"><img src="images/services/ugc-woman-pink.webp" alt="AI UGC asset optimized for conversion" width="960" height="1696" loading="lazy" decoding="async"></div>
+                    <div class="svc-card-body">
+                        <h3 class="svc-card-name">Conversion Content</h3>
+                        <p class="svc-card-desc">Optimized AI UGC assets designed for ads, product pages, and social media to increase click-through and conversion rates.</p>
+                    </div>
+                </article>
+                <article class="svc-card svc-card--green reveal" style="--reveal-delay: 0.16s">
+                    <div class="svc-card-media"><img src="images/services/ugc-woman-mirror.webp" alt="Scaled AI UGC production" width="768" height="1376" loading="lazy" decoding="async"></div>
+                    <div class="svc-card-body">
+                        <h3 class="svc-card-name">Scaled Production</h3>
+                        <p class="svc-card-desc">Platform for peer-to-peer lending.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 14: AI Models -->
+    <section id="ai-models" class="svc-section">
+        <div class="svc-inner">
+            <div class="svc-head reveal">
+                <h2 class="svc-title">AI Models</h2>
+                <div class="svc-intro">
+                    <p>Ultra-realistic AI human models created to showcase products in controlled shoots and advertising productions.</p>
+                    <p>Suppl'Eye designs and operates virtual talents built for product-focused visuals, photos and videos optimized for e-commerce, campaigns, and brand communication.</p>
+                    <p><strong>No UGC.</strong> This is digital talent for shooting-style content.</p>
+                </div>
+            </div>
+
+            <div class="svc-cards">
+                <article class="svc-card svc-card--sage reveal">
+                    <div class="svc-card-media"><img src="images/services/model-1.webp" alt="AI model in an orange editorial look" width="1143" height="2048" loading="lazy" decoding="async"></div>
+                    <div class="svc-card-body">
+                        <h3 class="svc-card-name">Trust-Driven UGC</h3>
+                        <p class="svc-card-desc">AI models designed to highlight products with precision, aesthetics, and brand alignment.</p>
+                    </div>
+                </article>
+                <article class="svc-card svc-card--yellow reveal" style="--reveal-delay: 0.08s">
+                    <div class="svc-card-media"><img src="images/services/model-2.webp" alt="AI model styled for advertising visuals" width="1143" height="2048" loading="lazy" decoding="async"></div>
+                    <div class="svc-card-body">
+                        <h3 class="svc-card-name">Conversion Content</h3>
+                        <p class="svc-card-desc">Built for packshots, lifestyle shoots, and advertising visuals.</p>
+                    </div>
+                </article>
+                <article class="svc-card svc-card--green reveal" style="--reveal-delay: 0.16s">
+                    <div class="svc-card-media"><img src="images/services/model-3.webp" alt="AI model for scaled production" width="1143" height="2048" loading="lazy" decoding="async"></div>
+                    <div class="svc-card-body">
+                        <h3 class="svc-card-name">Scaled Production</h3>
+                        <p class="svc-card-desc">No casting, logistics, or reshoots. Instant availability, and scalable production for brands and agencies.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 15: Web Design -->
+    <section id="web-design" class="svc-section">
+        <div class="svc-inner">
+            <div class="svc-head reveal">
+                <h2 class="svc-title">Web Design</h2>
+                <div class="svc-intro">
+                    <p>Product-driven web experiences designed to showcase visuals, improve usability, and increase conversion rates.</p>
+                    <p>Suppl'Eye designs modern interfaces optimized for e-commerce, brand platforms, and interactive product presentation.</p>
+                </div>
+            </div>
+
+            <div class="svc-cards">
+                <article class="svc-card svc-card--sage reveal">
+                    <div class="svc-card-media"><img src="images/services/web-color.webp" alt="Headphone colour configurator interface" width="2048" height="1555" loading="lazy" decoding="async"></div>
+                    <div class="svc-card-body">
+                        <h3 class="svc-card-name">Product Experiences</h3>
+                        <p class="svc-card-desc">Product pages, configurators, and shopping experiences designed to showcase products.</p>
+                    </div>
+                </article>
+                <article class="svc-card svc-card--yellow reveal" style="--reveal-delay: 0.08s">
+                    <div class="svc-card-media"><img src="images/services/web-audio.webp" alt="High-definition audio product page" width="2048" height="1497" loading="lazy" decoding="async"></div>
+                    <div class="svc-card-body">
+                        <h3 class="svc-card-name">Conversion Design</h3>
+                        <p class="svc-card-desc">UX and UI built to optimize user journeys, engagement, and performance across e-commerce and campaign pages.</p>
+                    </div>
+                </article>
+                <article class="svc-card svc-card--green reveal" style="--reveal-delay: 0.16s">
+                    <div class="svc-card-media"><img src="images/services/web-details.webp" alt="Immersive interactive product interface" width="2048" height="1497" loading="lazy" decoding="async"></div>
+                    <div class="svc-card-body">
+                        <h3 class="svc-card-name">Immersive Interfaces</h3>
+                        <p class="svc-card-desc">Immersive and interactive websites designed to express brand identity, storytelling, and premium digital presence.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 16: Contact / Footer -->
     <section class="contact-section">
         <div class="contact-card reveal">
             <div class="contact-content">
