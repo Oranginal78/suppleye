@@ -88,6 +88,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     text-align: center;
+    padding-top: 60px; /* clear the fixed site header */
 }
 
 .hero-content h1 {
@@ -699,8 +700,8 @@ html { scroll-behavior: smooth; }
     to   { opacity: 1; transform: translateY(0); }
 }
 
-.logo img       { animation: heroFadeDown 0.9s cubic-bezier(0.22, 1, 0.36, 1) backwards; }
-.header-tagline { animation: heroFadeDown 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.15s backwards; }
+.site-logo img  { animation: heroFadeDown 0.9s cubic-bezier(0.22, 1, 0.36, 1) backwards; }
+.site-nav       { animation: heroFadeDown 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.15s backwards; }
 .hero-content h1 { animation: heroFadeUp 1s cubic-bezier(0.22, 1, 0.36, 1) 0.3s backwards; }
 .vision-badge   { animation: heroFadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.6s backwards; }
 
@@ -1777,4 +1778,140 @@ html { scroll-behavior: smooth; }
 
 @media (max-width: 560px) {
     .svc-section { padding: 60px 20px; }
+}
+
+/* =========================================================
+   Site Header / Navbar (fixed, locked logo + nav)
+   Transparent over the hero, turns into a fluo-yellow
+   banner once the page is scrolled (.scrolled / .is-solid).
+   ========================================================= */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 14px 30px;
+    background: transparent;
+    transition: background-color 0.3s ease, padding 0.3s ease, box-shadow 0.3s ease;
+}
+
+.site-logo { display: block; line-height: 0; padding-left: 24px; }
+.site-logo img {
+    height: 46px;
+    width: auto;
+    display: block;
+    transition: height 0.3s ease;
+}
+
+.site-nav {
+    display: flex;
+    gap: 6px;
+}
+
+.site-nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.02em;
+    padding: 8px 18px;
+    border-radius: 40px;
+    white-space: nowrap;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+    background: rgba(255, 255, 255, 0.16);
+}
+
+/* Scrolled / solid: slim green banner with white logo + links. */
+.site-header.scrolled,
+.site-header.is-solid {
+    background: #0B2B20; /* Deep Forest Green — matches the About section */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.18);
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+.site-header.scrolled .site-logo img,
+.site-header.is-solid .site-logo img {
+    height: 28px;
+}
+
+/* Swap to the white logo on the green banner. */
+.site-logo .logo-solid { display: none; }
+.site-header.scrolled .site-logo .logo-default,
+.site-header.is-solid .site-logo .logo-default { display: none; }
+.site-header.scrolled .site-logo .logo-solid,
+.site-header.is-solid .site-logo .logo-solid { display: block; }
+
+.site-header.scrolled .site-nav a,
+.site-header.is-solid .site-nav a {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.site-header.scrolled .site-nav a,
+.site-header.is-solid .site-nav a {
+    color: #FFFFFF;
+}
+
+.site-header.scrolled .site-nav a:hover,
+.site-header.scrolled .site-nav a:focus-visible,
+.site-header.is-solid .site-nav a:hover,
+.site-header.is-solid .site-nav a:focus-visible,
+.site-header.scrolled .site-nav a[aria-current="page"],
+.site-header.is-solid .site-nav a[aria-current="page"] {
+    background: rgba(255, 255, 255, 0.18);
+}
+
+/* Keep anchored sections clear of the fixed header when jumped to. */
+#about, #contact { scroll-margin-top: 90px; }
+
+@media (max-width: 560px) {
+    .site-header { padding: 10px 16px; gap: 8px; }
+    .site-logo img { height: 36px; }
+    .site-header.scrolled .site-logo img,
+    .site-header.is-solid .site-logo img { height: 24px; }
+    .site-nav { gap: 2px; }
+    .site-nav a { padding: 8px 12px; font-size: 0.8rem; }
+}
+
+/* =========================================================
+   Custom scrollbar — fluo-yellow thumb, no rounded corners
+   ========================================================= */
+/* Firefox only. In Chromium, setting these disables ::-webkit-scrollbar
+   (forcing the rounded standard scrollbar), so scope them to Firefox. */
+@supports (-moz-appearance: none) {
+    html {
+        scrollbar-color: var(--vision-yellow) #151515; /* thumb, track */
+        scrollbar-width: auto;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+}
+::-webkit-scrollbar-track {
+    background: #151515;
+    border-radius: 0;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--vision-yellow);
+    border: 0;
+    border-radius: 0;
+    background-clip: border-box; /* fill the full track width, no inset */
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #dceb00;
+}
+::-webkit-scrollbar-corner {
+    background: #151515;
 }

@@ -26,6 +26,23 @@
     els.forEach(function (el) { observer.observe(el); });
 })();
 
+// Site header: turn into a fluo-yellow banner once the page is scrolled.
+(function () {
+    var header = document.querySelector('.site-header');
+    if (!header || header.classList.contains('is-solid')) return; // solid pages stay yellow
+
+    var onScroll = function () {
+        if (window.pageYOffset > 10) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    };
+
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+})();
+
 // Magnetic hover: the VISION CTA drifts toward the cursor, then springs back.
 (function () {
     var mq = window.matchMedia;
